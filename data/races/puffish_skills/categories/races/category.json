@@ -1,0 +1,12 @@
+{
+  "unlocked_by_default": true,
+  "starting_points": 1,
+  "title": "Races",
+  "icon": {
+    "type": "item",
+    "data": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "background": "textures/gui/advancements/backgrounds/stone.png"
+}

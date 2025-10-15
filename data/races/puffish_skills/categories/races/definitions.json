@@ -1,0 +1,524 @@
+{
+  "race_human": {
+    "title": "Human",
+    "frame": "challenge",
+    "description": "Versatile and resilient, humans adapt quickly to any environment and excel through determination.",
+    "extra_description": "+20% Base Experience",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:experience",
+          "value": 0.2,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_merrow": {
+    "title": "Merrow",
+    "frame": "challenge",
+    "description": "Aquatic beings with a natural affinity for water, merrows thrive in the depths and learn swiftly.",
+    "extra_description": "+10 Oxygen Bonus, +10% Base Experience, +20% Submerged mining speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "water_bucket"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.oxygen_bonus",
+          "value": 10,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:experience",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type":"puffish_skills:attribute",
+        "data": {
+          "attribute": "player.submerged_mining_speed",
+          "value": 0.2,
+          "operation":  "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_fairy": {
+    "title": "Fairy",
+    "frame": "challenge",
+    "required_mods": [
+      "neoforge",
+      "pehkui"
+    ],
+    "description": "Tiny magical creatures with the gift of flight, fairies are elusive and enchanting but fragile.",
+    "extra_description": "Flight, -10 Max Health, 0.2x Size, -50% Melee Damage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "elytra"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "neoforge:creative_flight",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": -0.5,
+          "operation":"multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": -10,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:base 0.2 @s",
+          "lock_command": "scale set pehkui:base 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:base true @s",
+          "lock_command": "scale persist set pehkui:base false @s"
+        }
+      }
+    ]
+  },
+  "race_halfling": {
+    "title": "Halfling",
+    "frame": "challenge",
+    "required_mods": [
+      "pehkui"
+    ],
+    "description": "Small and nimble, halflings are masters of stealth and agility, often overlooked by larger folk.",
+    "extra_description": "+15% Sneak Speed, +10% Base Stealth, -10% Jump Height, -25% Height, 0.6x Width",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "cookie"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:player.sneaking_speed",
+          "value": 0.15,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stealth",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 0.6 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:width 0.6 @s",
+          "lock_command": "scale set pehkui:width 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:width true @s",
+          "lock_command": "scale persist set pehkui:width false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": -0.1,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_dwarf_stone": {
+    "title": "Dwarf (Stone)",
+    "frame": "challenge",
+    "description": "Stout and sturdy, stone dwarves are renowned for their mining prowess and resilience underground.",
+    "extra_description": "+15% Base Mining Speed, +4 Max Health, -10% Jump Height, -25% Height, 0.9x Width",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:pickaxe_speed",
+          "value": 0.15,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 0.75 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:width 0.9 @s",
+          "lock_command": "scale set pehkui:width 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:width true @s",
+          "lock_command": "scale persist set pehkui:width false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": -0.1,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_dwarf_hill": {
+    "title": "Dwarf (Hill)",
+    "frame": "challenge",
+    "description": "Hill dwarves are tough and resourceful, skilled with axes and well adapted to rugged terrain.",
+    "extra_description": "+15% Base Axe Speed, +4 Max Health, -10% Jump Height, -25% Height, 0.9x Width",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_axe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:axe_speed",
+          "value": 0.15,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 0.75 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:width 0.9 @s",
+          "lock_command": "scale set pehkui:width 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:width true @s",
+          "lock_command": "scale persist set pehkui:width false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": -0.1,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_wood_elf": {
+    "title": "Wood Elf",
+    "frame": "challenge",
+    "description": "Graceful and swift, wood elves are expert archers who move effortlessly through forests.",
+    "extra_description": "+10% Base Ranged Damage, +20% Draw Speed, -4 Max Health, +50% Jump Height, +20% Height (1.2x)",
+    "required_mods": [
+      "pehkui"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "bow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_damage",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:draw_speed",
+          "value": 0.2,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": -4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 1.2 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": 0.5,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_high_elf": {
+    "title": "High Elf",
+    "frame": "challenge",
+    "description": "Noble and wise, high elves possess powerful magic and leap with supernatural grace.",
+    "extra_description": "+10% Base Spell Power, +10% Base Mana Regen, -4 Max Health, +30% Jump Height, +20% Height (1.2x)",
+    "required_mods": [
+      "pehkui",
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "enchanting_table"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": -4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 1.2 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": 0.3,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_orc": {
+    "title": "Orc",
+    "frame": "challenge",
+    "description": "Fierce and mighty, orcs dominate the battlefield with brute strength and imposing stature.",
+    "extra_description": "+15% Base Melee Power, +10% Knockback, +6 Max Health, +30% Jump Height, +30% Height (1.3x), +20% Width (1.2x)",
+    "required_mods": [
+      "pehkui",
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.15,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:knockback",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 6,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 1.3 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:width 1.2 @s",
+          "lock_command": "scale set pehkui:width 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:width true @s",
+          "lock_command": "scale persist set pehkui:width false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": 0.3,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  }
+}

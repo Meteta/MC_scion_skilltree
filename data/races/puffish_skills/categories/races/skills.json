@@ -1,0 +1,56 @@
+{
+	"ipnf0qbyg9rby6sl": {
+		"definition": "race_wood_elf",
+		"x": -160,
+		"y": -92.37604307034012,
+		"root": true
+	},
+	"jryagoxfovy3qde4": {
+		"definition": "race_human",
+		"x": 0,
+		"y": 0,
+		"root": true
+	},
+	"qrp2l2eydjznmhj1": {
+		"definition": "race_dwarf_stone",
+		"x": 160,
+		"y": -92.37604307034012,
+		"root": true
+	},
+	"x44j9pc8v5nfdl17": {
+		"definition": "race_high_elf",
+		"x": -96,
+		"y": -166.27687752661222,
+		"root": true
+	},
+	"dfmejm7181w0lr3q": {
+		"definition": "race_dwarf_hill",
+		"x": 96,
+		"y": -166.27687752661222,
+		"root": true
+	},
+	"ai6igmamd8nh2q54": {
+		"definition": "race_halfling",
+		"x": 0,
+		"y": 184.75208614068023,
+		"root": true
+	},
+	"vv7tljw966c5utt3": {
+		"definition": "race_orc",
+		"x": 0,
+		"y": -184.75208614068023,
+		"root": true
+	},
+	"42cgw5hxuknwazh9": {
+		"definition": "race_merrow",
+		"x": -160,
+		"y": 92.37604307034012,
+		"root": true
+	},
+	"xgticxvlty6qng9r": {
+		"definition": "race_fairy",
+		"x": 160,
+		"y": 92.37604307034012,
+		"root": true
+	}
+}
