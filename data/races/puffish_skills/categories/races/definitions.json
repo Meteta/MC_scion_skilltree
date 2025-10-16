@@ -3,7 +3,7 @@
     "title": "Human",
     "frame": "challenge",
     "description": "Versatile and resilient, humans adapt quickly to any environment and excel through determination.",
-    "extra_description": "+20% Base Experience",
+    "extra_description": "+50% Base Experience",
     "icon": {
       "type": "item",
       "data": {
@@ -15,7 +15,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_attributes:experience",
-          "value": 0.2,
+          "value": 0.5,
           "operation": "multiply_base"
         }
       }
@@ -25,7 +25,7 @@
     "title": "Merrow",
     "frame": "challenge",
     "description": "Aquatic beings with a natural affinity for water, merrows thrive in the depths and learn swiftly.",
-    "extra_description": "+10 Oxygen Bonus, +10% Base Experience, +20% Submerged mining speed",
+    "extra_description": "+10s Oxygen per bubble, +10% Base Experience, +20% Submerged mining speed, +100% Base Swimming Speed",
     "icon": {
       "type": "item",
       "data": {
@@ -55,6 +55,14 @@
           "attribute": "player.submerged_mining_speed",
           "value": 0.2,
           "operation":  "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "neoforge:swim_speed",
+          "value": 1,
+          "operation": "multiply_base"
         }
       }
     ]
@@ -122,7 +130,7 @@
       "pehkui"
     ],
     "description": "Small and nimble, halflings are masters of stealth and agility, often overlooked by larger folk.",
-    "extra_description": "+15% Sneak Speed, +10% Base Stealth, -10% Jump Height, -25% Height, 0.6x Width",
+    "extra_description": "+15% Sneak Speed, +50% Base Stealth, -10% Jump Height, -25% Height, 0.6x Width",
     "icon": {
       "type": "item",
       "data": {
@@ -142,7 +150,7 @@
         "type": "puffish_skills:attribute",
         "data": {
           "attribute": "puffish_attributes:stealth",
-          "value": 0.1,
+          "value": 0.5,
           "operation": "multiply_base"
         }
       },
@@ -516,6 +524,146 @@
         "data": {
           "attribute": "puffish_attributes:jump",
           "value": 0.3,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_dark_elf": {
+    "title": "Dark Elf",
+    "frame": "challenge",
+    "description": "Shadowy and swift, dark elves are masters of stealth and lightning-fast strikes from the depths.",
+    "extra_description": "+30% Attack Speed, +20% Base Stealth, -4 Max Health, +30% Jump Height, +20% Height (1.2x)",
+    "required_mods": [
+      "pehkui"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.3,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stealth",
+          "value": 0.2,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": -4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 1.2 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": 0.3,
+          "operation": "multiply_base"
+        }
+      }
+    ]
+  },
+  "race_dark_dwarf": {
+    "title": "Dark Dwarf",
+    "frame": "challenge",
+    "description": "Stout shadow warriors, dark dwarves combine dwarven resilience with deadly precision and stealth.",
+    "extra_description": "+10% Attack Speed, +30% Base Stealth, +4 Max Health, -10% Jump Height, -25% Height (0.75x), 0.9x Width",
+    "required_mods": [
+      "pehkui"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_axe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "minecraft:generic.attack_speed",
+          "value": 0.1,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stealth",
+          "value": 0.3,
+          "operation": "multiply_base"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 4,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:height 0.75 @s",
+          "lock_command": "scale set pehkui:height 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:height true @s",
+          "lock_command": "scale persist set pehkui:height false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale set pehkui:width 0.9 @s",
+          "lock_command": "scale set pehkui:width 1.0 @s"
+        }
+      },
+      {
+        "type": "puffish_skills:command",
+        "data": {
+          "unlock_command": "scale persist set pehkui:width true @s",
+          "lock_command": "scale persist set pehkui:width false @s"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": -0.1,
           "operation": "multiply_base"
         }
       }

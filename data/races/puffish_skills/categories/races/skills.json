@@ -32,7 +32,7 @@
 	"ai6igmamd8nh2q54": {
 		"definition": "race_halfling",
 		"x": 0,
-		"y": 184.75208614068023,
+		"y": 192,
 		"root": true
 	},
 	"vv7tljw966c5utt3": {
@@ -43,14 +43,26 @@
 	},
 	"42cgw5hxuknwazh9": {
 		"definition": "race_merrow",
-		"x": -160,
-		"y": 92.37604307034012,
+		"x": -96,
+		"y": 160,
 		"root": true
 	},
 	"xgticxvlty6qng9r": {
 		"definition": "race_fairy",
+		"x": 96,
+		"y": 160,
+		"root": true
+	},
+	"ekwujzuijt3e6o70": {
+		"definition": "race_dark_elf",
+		"x": -160,
+		"y": 96,
+		"root": true
+	},
+	"icciokkj5l702r8y": {
+		"definition": "race_dark_dwarf",
 		"x": 160,
-		"y": 92.37604307034012,
+		"y": 96,
 		"root": true
 	}
 }
