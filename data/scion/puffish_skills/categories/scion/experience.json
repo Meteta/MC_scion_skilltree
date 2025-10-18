@@ -111,6 +111,19 @@
 							}
 						]
 					},
+					"is_quartz": {
+						"operations": [
+							{
+								"type": "get_mined_block_state"
+							},
+							{
+								"type": "puffish_skills:test",
+								"data": {
+									"block": "nether_quartz_ore"
+								}
+							}
+						]
+					},
 					"is_diamond": {
 						"operations": [
 							{
@@ -157,6 +170,10 @@
 					},
 					{
 						"condition": "is_gold",
+						"expression": "2"
+					},
+					{
+						"condition": "is_quartz",
 						"expression": "2"
 					},
 					{

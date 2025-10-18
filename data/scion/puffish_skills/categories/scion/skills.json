@@ -189,31 +189,31 @@
 		"definition": "class_warrior",
 		"x": 0,
 		"y": -443.40500673763256,
-		"root": true
+		"root": false
 	},
 	"g46k1ib08scnrdc7": {
 		"definition": "class_ranger",
 		"x": -384,
 		"y": -221.70250336881628,
-		"root": true
+		"root": false
 	},
 	"la0w8cfcluyjr6fm": {
 		"definition": "class_bastion",
 		"x": 384,
 		"y": -221.70250336881628,
-		"root": true
+		"root": false
 	},
 	"ibputxtakpb6etv6": {
 		"definition": "class_bard",
 		"x": 384,
 		"y": 221.70250336881628,
-		"root": true
+		"root": false
 	},
 	"gzeasceh3zbroc2i": {
 		"definition": "class_pathfinder",
 		"x": -384,
 		"y": 221.70250336881628,
-		"root": true
+		"root": false
 	},
 	"8s7xbhqd4oqbyql9": {
 		"definition": "arrow_speed_2",
@@ -2073,7 +2073,7 @@
 		"definition": "class_wizard",
 		"x": 0,
 		"y": 443.40500673763256,
-		"root": true
+		"root": false
 	},
 	"oudxlp74cvzlap6y": {
 		"definition": "cooldown_reduction",
