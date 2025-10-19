@@ -7,5 +7,6 @@
       "item": "minecraft:nether_star"
     }
   },
+  "exclusive_root": true,
   "background": "textures/gui/advancements/backgrounds/stone.png"
 }
