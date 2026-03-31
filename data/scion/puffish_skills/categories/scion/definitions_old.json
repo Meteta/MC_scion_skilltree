@@ -1,0 +1,2906 @@
+{
+  "root_scion": {
+    "title": "Scion",
+    "frame": "challenge",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "nether_star"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "constitution+1": {
+    "title": "Constitution +1",
+    "description": "Constitution increases your maximum health and stamina.",
+    "extra_description": "+1 Max Health, +1% Stamina (Food/Saturation Loss Resistance)",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "regeneration"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 1,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "strength+1": {
+    "title": "Strength +1",
+    "description": "Strength increases your melee damage and knockback.",
+    "extra_description": "+1% Melee Damage, +1% Knockback",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "wooden_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.melee_damage",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:knockback",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "dexterity+1": {
+    "title": "Dexterity +1",
+    "description": "Dexterity increases your ranged damage and draw speed.",
+    "extra_description": "+1% Ranged Damage, +1% Draw Speed",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "bow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_skills:player.ranged_damage",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:draw_speed",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "intelligence+1": {
+    "title": "Intelligence +1",
+    "description": "Intelligence increases your mana regen and max mana.",
+    "extra_description": "+1% Max Mana, +1% Mana Regen",
+    "required_mods":[
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "wisdom+1": {
+    "title": "Wisdom +1",
+    "description": "Wisdom increases the experience you gain.",
+    "extra_description": "+1% Experience Orbs Gained",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "experience_bottle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:experience_gained",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "charisma+1": {
+    "title": "Charisma +1",
+    "description": "Charisma increases your ability to negotiate and trade.",
+    "extra_description": "+10 Village Reputation",
+    "required_mods": [
+      "artifacts"
+    ],
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "invisibility"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:player.villager_reputation",
+          "value": 10,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "class_warrior": {
+    "title": "Warrior",
+    "description": "The Warrior excels in melee combat, wielding swords and axes to deal heavy damage and knockback.",
+    "extra_description": "+5% Melee Damage, +2.5% Knockback, +1 Armor Shred",
+    "frame": "challenge",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "diamond_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Warrior"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:knockback",
+          "value": 0.025,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:armor_shred",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "class_ranger": {
+    "title": "Ranger",
+    "description": "The Ranger excels in ranged combat, utilizing bows and crossbows, and can leverage their skill to perform critical hits.",
+    "extra_description": "+5% Ranged Damage, +2.5% Draw Speed, +1% Critical Hit Chance, +1% Critical Hit Damage",
+    "frame": "challenge",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "leather_helmet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Ranger"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_damage",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:draw_speed",
+          "value": 0.025,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_chance",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_damage",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "class_bastion": {
+    "title": "Bastion",
+    "description": "The Bastion is a stalwart defender, specializing in absorbing damage and protecting allies with enhanced health and resistances.",
+    "extra_description": " +3 Max Health, +5% Melee Resistance, +5% Ranged Resistance",
+    "frame": "challenge",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "shield"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Bastion"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 3,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_resistance",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "class_bard": {
+    "title": "Bard",
+    "description": "The Bard is a charismatic performer who inspires allies and demoralizes foes, enhancing experience gain and improving trading capabilities.",
+    "extra_description": " +10 Village Reputation, +5% Experience Orbs Gained, +1 Mount Speed",
+    "frame": "challenge",
+    "required_mods": [
+      "apothic_attributes",
+      "artifacts"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "music_disc_cat"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Bard"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:player.villager_reputation",
+          "value": 10,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:experience_gained",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:generic.mount_speed",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "class_wizard": {
+    "title": "Wizard",
+    "description": "The Wizard wields arcane powers to unleash devastating magic attacks and bolster their magical defenses.",
+    "extra_description": "+5% Magic Damage, +5% Magic Resistance",
+    "frame": "challenge",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "writable_book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Wizard"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_damage",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "class_pathfinder": {
+    "title": "Pathfinder",
+    "description": " The Pathfinder is an adept explorer and survivalist, skilled in resource gathering and enduring harsh conditions.",
+    "extra_description": " +5% Stamina, +1% Pickaxe Speed, +1% Axe Speed, +1% Shovel Speed, +1% Repair Cost",
+    "frame": "challenge",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "iron_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Survivor"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:pickaxe_speed",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:axe_speed",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:shovel_speed",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:repair_cost",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "frost_fists": {
+    "title": "Frost Fists",
+    "description": "Learn to imbue your attacks with frost, slowing enemies.",
+    "extra_description": "+1 Frost Damage",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "snowball"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:cold_damage",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "arrow_speed_2": {
+    "title": "Arrow Speed",
+    "description": "Learn to increase the speed of your arrows.",
+    "extra_description": "+2% Arrow Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "arrow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:bow_projectile_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "draw_speed_2": {
+    "title": "Draw Speed",
+    "description": "Learn to draw your ranged weapon faster, allowing for quicker shots in combat.",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "bow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:draw_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "bolt_speed_2": {
+    "title": "Bolt Speed",
+    "description": "Learn to increase the speed of your crossbow bolts.",
+    "extra_description": "+2% Crossbow Bolt Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "crossbow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:crossbow_projectile_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "dodge_chance_2": {
+    "title": "Dodge Chance",
+    "description": "Learn to evade attacks more effectively.",
+    "extra_description": "+2% Dodge Chance",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "slow_falling"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:dodge_chance",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "stealth_2": {
+    "title": "Stealth",
+    "description": " Learn to move silently and avoid detection.",
+    "extra_description": "+2% Stealth (Mob Detection Range Reduction)",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "leather_boots"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stealth",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "crit_damage_2": {
+    "title": "Critical Hit Damage",
+    "description": "Learn to deal more damage with critical hits.",
+    "extra_description": "+2% Critical Hit Damage",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "conduit_power"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_damage",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "crit_chance_2": {
+    "title": "Critical Hit Chance",
+    "description": "Learn to land critical hits more often.",
+    "extra_description": "+2% Critical Hit Chance",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "ender_eye"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_chance",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "sprint_speed_2": {
+    "title": "Sprint Speed",
+    "description": "Learn to move faster, increasing your overall movement speed.",
+    "extra_description": "+5% Movement Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "speed"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:sprinting_speed",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "agility_2": {
+    "title": "Agility",
+    "description": "Learn to fall gracefully, reducing fall damage",
+    "extra_description": "+2% Fall Damage Reduction",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "feather"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fall_reduction",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "melee_damage_2": {
+    "title": "Melee Damage",
+    "description": "Learn to deal more damage in combat.",
+    "extra_description": "+2% Melee Damage",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "strength"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "armor_shred_2": {
+    "title": "Armor Shred",
+    "description": "Learn to bypass enemy armor, dealing more damage to armored foes.",
+    "extra_description": "+2% Armor Shred",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "mace"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:armor_shred",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "ranged_resistance_2": {
+    "title": "Ranged Resistance",
+    "description": "Learn to resist ranged attacks, reducing incoming damage from arrows and projectiles.",
+    "extra_description": "+2% Ranged Resistance",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "absorption"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "melee_resistance_2": {
+    "title": "Melee Resistance",
+    "description": "Learn to resist melee attacks, reducing incoming damage from close combat.",
+    "extra_description": "+2% Melee Resistance",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "resistance"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_resistance",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "healing_2": {
+    "title": "Healing",
+    "description": "Learn to heal yourself more effectively.",
+    "extra_description": "+2% Healing Received",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "health_boost"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:healing",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "knockback_2": {
+    "title": "Knockback",
+    "description": "Learn to increase the knockback you deal to enemies.",
+    "extra_description": "+2% Knockback",
+    "required_mods": [
+      "artifacts"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "artifacts:pocket_piston"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:knockback",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "jump": {
+    "title": "Jump Boost",
+    "description": "Learn to jump higher, increasing your vertical leap.",
+    "extra_description": "+1% Jump Height",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "jump_boost"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:jump",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "magic_resistance_2": {
+    "title": "Magic Resistance",
+    "description": "Learn to resist magical attacks, reducing incoming damage from spells and magical effects.",
+    "extra_description": "+2% Magic Resistance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "shaper_armor_trim_smithing_template"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "life_steal_2": {
+    "title": "Life Steal",
+    "description": "Learn to steal health from enemies when you deal damage.",
+    "extra_description": "+2% Life Steal",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "potion"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:life_steal",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "tamed_damage_2": {
+    "title": "Tamed Damage",
+    "description": "Learn to increase the damage dealt by your tamed pets.",
+    "extra_description": "+2% Tamed Pet Damage",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "bone"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:tamed_damage",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "fortune_2": {
+    "title": "Fortune",
+    "description": "Learn to increase the fortune of your mining, yielding more resources.",
+    "extra_description": "+2% Fortune (Increased Ore Drops)",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "diamond_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fortune",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "natural_regen_2": {
+    "title": "Natural Regeneration",
+    "description": "Learn to regenerate health naturally over time.",
+    "extra_description": "+2% Natural Regeneration",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "golden_apple"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "eating_2": {
+    "title": "Eating",
+    "description": "Learn to eat food faster, reducing the time it takes to consume meals.",
+    "extra_description": "+2% Eating Speed",
+    "required_mods": [
+      "artifacts"
+    ],
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "hunger"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:generic.eating_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "drinking_2": {
+    "title": "Drinking",
+    "description": "Learn to drink potions faster, reducing the time it takes to consume them.",
+    "extra_description": "+2% Drinking Speed",
+    "required_mods": [
+      "artifacts"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "potion"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:generic.drinking_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "mount_speed_2": {
+    "title": "Mount Speed",
+    "description": "Learn to increase the speed of your mounts.",
+    "extra_description": "+2% Mount Speed",
+    "required_mods": [
+      "artifacts"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "saddle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:generic.mount_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "charisma_2": {
+    "title": "Charisma II",
+    "description": "Charisma increases your ability to negotiate and trade.",
+    "extra_description": "+20 Village Reputation",
+    "required_mods": [
+      "artifacts"
+    ],
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "invisibility"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:player.villager_reputation",
+          "value": 20,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fishing_line_strength": {
+    "title": "Fishing Line Strength",
+    "description": "Learn to increase the strength of your fishing line, reducing the chance of it breaking.",
+    "extra_description": "+1% Fishing Line Strength",
+    "required_mods": [
+      "stardew_fishing"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "stardew_fishing:trap_bobber"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "stardew_fishing:line_strength",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fising_bar_size": {
+    "title": "Fishing Bar Size",
+    "description": "Learn to increase the size of your fishing bar, making it easier to catch fish.",
+    "extra_description": "+2px Fishing Bar Size",
+    "required_mods": [
+      "stardew_fishing"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "stardew_fishing:cork_bobber"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "stardew_fishing:bar_size",
+          "value": 2,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fishing_treasure_chance": {
+    "title": "Fishing Treasure Chance",
+    "description": "Learn to increase the chance of finding treasure while fishing.",
+    "extra_description": "+1% Fishing Treasure Chance",
+    "required_mods": [
+      "stardew_fishing"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "stardew_fishing:treasure_bobber"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "stardew_fishing:bar_size",
+          "value": 0.01,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "axespeed_2": {
+    "title": "Axe Speed",
+    "description": "Learn to chop wood faster, increasing your axe speed.",
+    "extra_description": "+2% Axe Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "diamond_axe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:axe_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "pickaxespeed_2": {
+    "title": "Pickaxe Speed",
+    "description": "Learn to mine blocks faster, increasing your pickaxe speed.",
+    "extra_description": "+2% Pickaxe Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "diamond_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:pickaxe_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "shovel_speed": {
+    "title": "Shovel Speed",
+    "description": "Learn to mine blocks faster, increasing your shovel speed.",
+    "extra_description": "+2% Shovel Speed",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "diamond_shovel"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:shovel_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "reach_2": {
+    "title": "Block Reach",
+    "description": "Learn to increase your reach, allowing you to interact with blocks from further away.",
+    "extra_description": "+2% Reach",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "wooden_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.block_interaction_range",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "entity_reach_2": {
+    "title": "Entity Reach",
+    "description": "Learn to increase your reach, allowing you to interact with entities from further away.",
+    "extra_description": "+0.5 Reach",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "wooden_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.entity_interaction_range",
+          "value": 0.5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "fortune": {
+    "title": "Fortune",
+    "description": "Increase your fortune.",
+    "extra_description": "+1% Fortune",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:fortune",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "luck": {
+    "title": "Luck",
+    "description": "Increase your luck, improving your chances of finding rare items and getting better loot.",
+    "extra_description": "+1% Luck",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "luck"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.luck",
+          "value": 0.01,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "oxygen": {
+    "title": "Oxygen",
+    "description": "Increase your underwater breathing capacity, allowing you to stay submerged longer.",
+    "extra_description": "+1 Oxygen",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "water_breathing"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.oxygen_bonus",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "harvest": {
+    "title": "Harvest",
+    "description": "Increase the yield of crops.",
+    "extra_description": "+1 Harvested Crop",
+    "required_mods": [
+      "additional_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "wheat"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "additional_attributes:harvest",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "sneak_speed": {
+    "title": "Sneak Speed",
+    "description": "Learn to move faster while sneaking, increasing your sneak speed.",
+    "extra_description": "+2% Sneak Speed",
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "night_vision"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.sneaking_speed",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "tamed_resistance": {
+    "title": "Tamed Resistance",
+    "description": "Learn to increase the resistance of your tamed pets, reducing incoming damage.",
+    "extra_description": "+2% Tamed Pet Resistance",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "diamond_horse_armor"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:tamed_resistance",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "melee_resistance_shred": {
+    "title": "Melee Resistance Shred",
+    "description": "Learn to reduce the melee resistance of enemies you hit, making them more vulnerable to melee attacks.",
+    "extra_description": "+2% Melee Resistance Shred",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "golden_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_resistance_shred",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "ranged_resistance_shred": {
+    "title": "Ranged Resistance Shred",
+    "description": "Learn to reduce the ranged resistance of enemies you hit, making them more vulnerable to ranged attacks.",
+    "extra_description": "+2% Ranged Resistance Shred",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "bow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_resistance_shred",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "weakpoint_analysis_2": {
+    "title": "Weakpoint Analysis",
+    "description": "Learn to target enemy weakpoints for increased crit chance and damage.",
+    "extra_description": "+5% Critical Hit Chance, +5% Critical Hit Damage",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "wind_charge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_chance",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_damage",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "armor_breaker_2": {
+    "title": "Armour Breaker",
+    "description": "Learn to destroy enemy armour and resistances",
+    "extra_description": "+5% Resistance Shred, +5% Armour Shred",
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "wind_charge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:resistance_shred",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:armor_shred",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "fire_fists": {
+    "title": "Fire Fists",
+    "description": "Learn to imbue your attacks with fire burning enemies.",
+    "extra_description": "+1 Fire Damage",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "fire_charge"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:fire_damage",
+          "value": 1,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "blood_resist": {
+    "title": "Blood Magic Resistance",
+    "description": "Learn to resist the effects of blood magic.",
+    "extra_description": "+2% Blood Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:blood_vial"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "eldritch_resist": {
+    "title": "Eldritch Magic Resistance",
+    "description": "Learn to resist the effects of eldritch magic.",
+    "extra_description": "+2% Eldritch Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:eldritch_manuscript"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "ender_resist": {
+    "title": "Ender Magic Resistance",
+    "description": "Learn to resist the effects of ender magic.",
+    "extra_description": "+2% Ender Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "ender_pearl"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "evocation_resist": {
+    "title": "Evocation Magic Resistance",
+    "description": "Learn to resist the effects of evocation magic.",
+    "extra_description": "+2% Evocation Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "emerald"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "fire_resist": {
+    "title": "Fire Magic Resistance",
+    "description": "Learn to resist the effects of fire magic.",
+    "extra_description": "+2% Fire Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "blaze_rod"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "holy_resist": {
+    "title": "Holy Magic Resistance",
+    "description": "Learn to resist the effects of holy magic.",
+    "extra_description": "+2% Holy Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:divine_pearl"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "ice_resist": {
+    "title": "Ice Magic Resistance",
+    "description": "Learn to resist the effects of ice magic.",
+    "extra_description": "+2% Ice Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:frozen_bone"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "lightning_resist": {
+    "title": "Lightning Magic Resistance",
+    "description": "Learn to resist the effects of lightning magic.",
+    "extra_description": "+2% Lightning Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:lightning_bottle"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "nature_resist": {
+    "title": "Nature Magic Resistance",
+    "description": "Learn to resist the effects of nature magic.",
+    "extra_description": "+2% Nature Magic Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "poisonous_potato"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "spell_resist": {
+    "title": "Spell Magic Resistance",
+    "description": "Learn to resist the effects of magic.",
+    "extra_description": "+2% Spell Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:protection_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "spell_power": {
+    "title": "Spell Magic Power",
+    "description": "Learn to increase the power of your magic.",
+    "extra_description": "+2% Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "blood_power": {
+    "title": "Blood Magic Spell Power",
+    "description": "Cast stronger spells with blood magic",
+    "extra_description": "+2% Blood Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:blood_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "eldritch_power": {
+    "title": "Eldritch Magic Spell Power",
+    "description": "Cast stronger spells with eldritch magic",
+    "extra_description": "+2% Eldritch Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:arcane_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "ender_power": {
+    "title": "Ender Magic Spell Power",
+    "description": "Cast stronger spells with ender magic",
+    "extra_description": "+2% Ender Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:ender_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "evocation_power": {
+    "title": "Evocation Magic Spell Power",
+    "description": "Cast stronger spells with evocation magic",
+    "extra_description": "+2% Evocation Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:evocation_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "fire_power": {
+    "title": "Fire Magic Spell Power",
+    "description": "Cast stronger spells with fire magic",
+    "extra_description": "+2% Fire Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:fire_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "holy_power": {
+    "title": "Holy Magic Spell Power",
+    "description": "Cast stronger spells with holy magic",
+    "extra_description": "+2% Holy Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:holy_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "ice_power": {
+    "title": "Ice Magic Spell Power",
+    "description": "Cast stronger spells with ice magic",
+    "extra_description": "+2% Ice Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:ice_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "lightning_power": {
+    "title": "Lightning Magic Spell Power",
+    "description": "Cast stronger spells with lightning magic",
+    "extra_description": "+2% Lightning Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:lightning_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "nature_power": {
+    "title": "Nature Magic Spell Power",
+    "description": "Cast stronger spells with nature magic",
+    "extra_description": "+2% Nature Magic Spell Power",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:nature_rune"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "cast_time_reduction": {
+    "title": "Spell Cast Time Reduction",
+    "description": "Cast spells faster",
+    "extra_description": "+2% Spell Cast Speed",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:cooldown_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:cast_time_reduction",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "cooldown_reduction": {
+    "title": "Spell Cooldown Reduction",
+    "description": "Reduce spell cooldowns",
+    "extra_description": "+2% Spell Cooldown Reduction",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:cooldown_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:cooldown_reduction",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "mana_regen": {
+    "title": "Mana Regeneration",
+    "description": "Regenerate mana faster",
+    "extra_description": "+2% Mana Regeneration",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:mana_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:mana_regen",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "max_mana": {
+    "title": "Maximum Mana",
+    "description": "Increase your maximum mana",
+    "extra_description": "+2% Maximum Mana",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:mana_upgrade_orb"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:max_mana",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "summon_damage": {
+    "title": "Summon Damage",
+    "description": "Increase damage dealt by summons",
+    "extra_description": "+2% Summon Damage",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:epic_ink"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:summon_damage",
+          "value": 0.02,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_farmer": {
+    "title": "Farmer",
+    "description": "The Farmer is a master of agriculture, skilled in growing crops and raising animals to sustain themselves and their community.",
+    "extra_description": "+10% Stamina, +5 Harvested Crops, +10% Natural Regeneration, +10% Eating Speed, +10% Axe Speed",
+    "frame": "challenge",
+    "required_mods": [
+      "additional_attributes",
+      "artifacts"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "hay_block"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Farmer"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "additional_attributes:harvest",
+          "value": 5,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:natural_regeneration",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:generic.eating_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:axe_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_fisher": {
+    "title": "Fisher",
+    "description": "The Fisher is an expert angler, skilled in catching fish and other aquatic creatures to provide food and resources.",
+    "extra_description": "+5% Fishing Line Strength, +6 Fishing Bar Size, +5% Fishing Treasure Chance, +5% Oxygen",
+    "frame": "challenge",
+    "required_mods": [
+      "additional_attributes",
+      "stardew_fishing",
+      "artifacts"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "artifacts:anglers_hat"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Fisher"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "stardew_fishing:line_strength",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "stardew_fishing:bar_size",
+          "value": 6,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "stardew_fishing:treasure_chance_bonus",
+          "value": 0.05,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.oxygen_bonus",
+          "value": 5,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "subclass_miner": {
+    "title": "Miner",
+    "description": "The Miner is a skilled excavator, adept at extracting valuable minerals and resources from the earth.",
+    "extra_description": "+10% Crossbow Bolt Speed, +10% Stamina, +10% Pickaxe Speed, +10% Shovel Speed, +10% Repair Cost Reduction",
+    "frame": "challenge",
+    "required_mods": [
+      "additional_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_pickaxe"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Miner"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:crossbow_projectile_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:stamina",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:pickaxe_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:shovel_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:repair_cost",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_archer": {
+    "title": "Archer",
+    "description": "The Archer is a master of the bow, skilled in ranged combat and precision shooting.",
+    "extra_description": "+10% Arrow Speed, +10% Draw Speed, +10% Ranged Resistance, +10% Crit Chance, +5% Nature Spell Power",
+    "frame": "challenge",
+    "required_mods": [
+      "apothic_attributes",
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "spectral_arrow"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Archer"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:bow_projectile_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:draw_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_chance",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_rogue": {
+    "title": "Rogue",
+    "description": "The Rogue is a stealthy and agile combatant, skilled in sneaking, backstabbing, and evading enemy attacks.",
+    "extra_description": "+15% Crit Damage, +10% Crit Chance, +10% Sneak Speed, +10% Dodge Chance",
+    "frame": "challenge",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "stone_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Rogue"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.15,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:crit_chance",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.sneaking_speed",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "apothic_attributes:dodge_chance",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_soldier": {
+    "title": "Soldier",
+    "description": "The Soldier is a disciplined and resilient combatant, skilled in both offense and defense.",
+    "extra_description": "+15% Melee Damage, +10% Armor Shred, +10% Melee Resistance, +10% Health",
+    "frame": "challenge",
+    "required_mods": [
+      "apothic_attributes"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_sword"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Soldier"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.15,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:armor_shred",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_resistance",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 10,
+          "operation": "addition"
+        }
+      }
+    ]
+  },
+  "subclass_paladin": {
+    "title": "Paladin",
+    "description": "The Paladin is a holy warrior, skilled in both offense and defense, and dedicated to protecting the weak and upholding justice.",
+    "extra_description": "+5% Melee Damage, +10% Healing Received, +10% Melee Resistance, +10% Health, +10% Holy Spell Power",
+    "frame": "challenge",
+    "required_mods": [
+      "apothic_attributes",
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "shield"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Paladin"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:healing",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_resistance",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "generic.max_health",
+          "value": 10,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_beastmaster": {
+    "title": "Beast Master",
+    "description": "The Beast Master is a skilled tamer and trainer of animals, able to command and control a variety of creatures.",
+    "extra_description": "+15% Tamed Damage, +5% Mount Speed, +10% Tamed Resistance, +10% Summon Damage",
+    "frame": "challenge",
+    "required_mods": [
+      "artifacts",
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "turtle_helmet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Beast Master"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:tamed_damage",
+          "value": 0.15,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:generic.mount_speed",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:tamed_resistance",
+          "value": 0.10,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:summon_damage",
+          "value": 0.10,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_warden": {
+    "title": "Warden",
+    "description": "The Warden is a near invincible being, focused entirely on taking all the damage so their allies can take advantage.",
+    "extra_description": "+5% Magic Resistance, +15% Ranged Resistance, +15% Melee Resistance, +5% Spell Resistance",
+    "frame": "challenge",
+    "required_mods": [
+      "artifacts",
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "netherite_helmet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:magic_damage",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:melee_damage",
+          "value": 0.15,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:ranged_resistance",
+          "value": 0.15,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:spell_resist",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_dark_wizard": {
+    "title": "Dark Wizard",
+    "description": "You have mastered the forbidden arts of blood and eldritch magic.",
+    "extra_description": "+10% Blood & Eldritch Spell Power, +10% Blood & Eldritch Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:necronomicon_spell_book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Dark Wizard"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_spell_power",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_spell_power",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:blood_magic_resist",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:eldritch_magic_resist",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_cleric": {
+    "title": "Cleric",
+    "description": "The Cleric is a holy healer and summoner, skilled in restoring health and commanding powerful summons.",
+    "extra_description": "+5% Summon Damage, +20% Holy Spell Power, +20% Holy Resistance",
+    "frame": "challenge",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:priest_helmet"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Cleric"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:summon_damage",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_spell_power",
+          "value": 0.2,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:holy_magic_resist",
+          "value": 0.2,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_trickster": {
+    "title": "Trickster",
+    "description": "The Trickster manipulates space and energy, mastering ender and evocation magic.",
+    "extra_description": "+10% Ender & Evocation Spell Power, +10% Ender & Evocation Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:evoker_spell_book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Trickster"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_spell_power",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_spell_power",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ender_magic_resist",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:evocation_magic_resist",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_elemental_wizard": {
+    "title": "Elemental Wizard",
+    "description": "You have mastered the elements: fire, ice, lightning, and nature.",
+    "extra_description": "+5% Fire, Ice, Lightning, Nature Spell Power & Resistance",
+    "required_mods": [
+      "irons_spellbooks"
+    ],
+    "icon": {
+      "type": "item",
+      "data": {
+        "item": "irons_spellbooks:blaze_spell_book"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Elemental Wizard"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_spell_power",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_spell_power",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_spell_power",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_spell_power",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:fire_magic_resist",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:ice_magic_resist",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:lightning_magic_resist",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "irons_spellbooks:nature_magic_resist",
+          "value": 0.05,
+          "operation": "multiply_total"
+        }
+      }
+    ]
+  },
+  "subclass_heroofthevillage": {
+    "title": "Hero of the Village",
+    "description": "You have befriended the villagers. They now see you as their protector and champion.",
+    "extra_description": "+30 Villager Reputation, +10% Entity Interaction Range, 10% Experience ",
+    "required_mods": [
+      "artifacts"
+    ],
+    "icon": {
+      "type": "effect",
+      "data": {
+        "effect": "hero_of_the_village"
+      }
+    },
+    "rewards": [
+      {
+        "type": "puffish_skills:tag",
+        "data": {
+          "tag": "Hero of the Village"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "artifacts:player.villager_reputation",
+          "value": 30,
+          "operation": "addition"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "player.entity_interaction_range",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      },
+      {
+        "type": "puffish_skills:attribute",
+        "data": {
+          "attribute": "puffish_attributes:experience",
+          "value": 0.1,
+          "operation": "multiply_total"
+        }
+      }
+
+    ]
+  }
+}

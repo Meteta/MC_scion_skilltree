@@ -8,7 +8,127 @@
 	"l0lp43pwrhtqymnt": {
 		"definition": "race_human_atlantean",
 		"x": -64,
+		"y": -32,
+		"root": false
+	},
+	"o4u3o8y608kcedm7": {
+		"definition": "race_human_khagari",
+		"x": 64,
+		"y": -32,
+		"root": false
+	},
+	"mzyf47cuyjbsgcq3": {
+		"definition": "race_sylvan",
+		"x": 0,
+		"y": -160,
+		"root": true
+	},
+	"csginm01zkb87u33": {
+		"definition": "race_high_elf",
+		"x": 0,
+		"y": -96,
+		"root": false
+	},
+	"rixa5eay1vkxlzgl": {
+		"definition": "race_wood_elf",
+		"x": -64,
+		"y": -96,
+		"root": false
+	},
+	"zuefok54lalnsfd1": {
+		"definition": "race_dark_elf",
+		"x": 64,
+		"y": -96,
+		"root": false
+	},
+	"58o09v07jixs8tti": {
+		"definition": "race_fairy",
+		"x": 64,
+		"y": -224,
+		"root": false
+	},
+	"dgz5xchfxvgfru8z": {
+		"definition": "race_dwarf",
+		"x": 0,
+		"y": 128,
+		"root": true
+	},
+	"om7uuzp9527m1xm9": {
+		"definition": "race_dwarf_stone",
+		"x": -64,
+		"y": 128,
+		"root": false
+	},
+	"zkivuhsbnmhndx6t": {
+		"definition": "race_dwarf_hill",
+		"x": 64,
+		"y": 128,
+		"root": false
+	},
+	"720riz384hzberb7": {
+		"definition": "race_dwarf_dark",
+		"x": 0,
+		"y": 192,
+		"root": false
+	},
+	"dvk7ing5v86plr3v": {
+		"definition": "race_inferni",
+		"x": 128,
 		"y": 0,
+		"root": true
+	},
+	"3a0u9c4xyb961r8f": {
+		"definition": "race_tiefling_baalian",
+		"x": 192,
+		"y": -64,
+		"root": false
+	},
+	"hcvlquek6981nhrx": {
+		"definition": "race_tiefling_lilithian",
+		"x": 192,
+		"y": 64,
+		"root": false
+	},
+	"smf2a8lyc7m8o2dg": {
+		"definition": "race_imp",
+		"x": 192,
+		"y": 0,
+		"root": false
+	},
+	"d741eyl7h3f43qgz": {
+		"definition": "race_orc",
+		"x": -128,
+		"y": 0,
+		"root": true
+	},
+	"hhdqbqk6i9aa9u8w": {
+		"definition": "race_orc_marauder",
+		"x": -192,
+		"y": -64,
+		"root": false
+	},
+	"p4nr3devwkgzpbbm": {
+		"definition": "race_orc_bulwark",
+		"x": -192,
+		"y": 0,
+		"root": false
+	},
+	"vhrreeprcgf0hfql": {
+		"definition": "race_orc_troll",
+		"x": -192,
+		"y": 64,
+		"root": false
+	},
+	"3ldowum4c9effid9": {
+		"definition": "race_sylvan_merrow",
+		"x": -64,
+		"y": -224,
+		"root": false
+	},
+	"o6tp20196a1b1vun": {
+		"definition": "race_human_halfling",
+		"x": 0,
+		"y": 64,
 		"root": false
 	}
 }
