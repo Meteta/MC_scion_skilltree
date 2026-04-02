@@ -714,7 +714,7 @@
 			"additional_attributes"
 		],
 		"description": "Descended from the lineage of Baal, the Baalian Tieflings carry the warlord's fury in their very flesh. Their infernal blood manifests as iron muscle and a volcanic rage that makes them terrifying on the battlefield.",
-		"extra_description": "+25% Base Melee Damage, +10% Knockback, +3 Max Health, 1.3x Height, 1.2x Width, Innate Casting: Divine Smite",
+		"extra_description": "+25% Base Melee Damage, +10% Knockback, +3 Max Health, +30% Jump Height, +1 Step Height, 1.3x Height, 1.2x Width, Innate Casting: Divine Smite",
 		"icon": {
 			"type": "item",
 			"data": {
@@ -743,6 +743,22 @@
 				"data": {
 					"attribute": "generic.max_health",
 					"value": 3,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:jump",
+					"value": 0.3,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.step_height",
+					"value": 1,
 					"operation": "addition"
 				}
 			},
@@ -976,7 +992,7 @@
 			"pehkui"
 		],
 		"description": "Fierce and mighty, orcs are born warriors shaped by generations of conflict. Their towering frames and explosive physicality make them a force of nature on any battlefield.",
-		"extra_description": "+6 Max Health, +30% Jump Height, 1.3x Height, 1.2x Width",
+		"extra_description": "+6 Max Health, +30% Jump Height, +1 Step Height, 1.3x Height, 1.2x Width",
 		"icon": {
 			"type": "item",
 			"data": {
@@ -998,6 +1014,14 @@
 					"attribute": "puffish_attributes:jump",
 					"value": 0.3,
 					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.step_height",
+					"value": 1,
+					"operation": "addition"
 				}
 			},
 			{
@@ -1099,8 +1123,11 @@
 	},
 	"race_orc_troll": {
 		"title": "Orc - Troll",
+		"required_mods": [
+			"pehkui"
+		],
 		"description": "Trolls are the ancient, lumbering kin of orckind, infamous for their unsettling ability to knit flesh back together mid-battle. What they lack in cunning they repay in sheer attrition — they simply refuse to stay down.",
-		"extra_description": "+4 Max Health, +50% Natural Regeneration",
+		"extra_description": "+4 Max Health, +50% Natural Regeneration, +30% Jump Height, +1 Step Height, 1.5x Height, 1.8x Width",
 		"icon": {
 			"type": "item",
 			"data": {
@@ -1122,6 +1149,50 @@
 					"attribute": "puffish_attributes:natural_regeneration",
 					"value": 0.5,
 					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "puffish_attributes:jump",
+					"value": 0.3,
+					"operation": "multiply_base"
+				}
+			},
+			{
+				"type": "puffish_skills:attribute",
+				"data": {
+					"attribute": "minecraft:generic.step_height",
+					"value": 1,
+					"operation": "addition"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "scale set pehkui:height 1.5 @s",
+					"lock_command": "scale set pehkui:height 1.0 @s"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "scale persist set pehkui:height true @s",
+					"lock_command": "scale persist set pehkui:height false @s"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "scale set pehkui:width 1.8 @s",
+					"lock_command": "scale set pehkui:width 1.0 @s"
+				}
+			},
+			{
+				"type": "puffish_skills:command",
+				"data": {
+					"unlock_command": "scale persist set pehkui:width true @s",
+					"lock_command": "scale persist set pehkui:width false @s"
 				}
 			}
 		],
